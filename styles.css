@@ -96,6 +96,7 @@ img {
   display: inline-flex;
   gap: 14px;
   font-family: var(--utility);
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -737,6 +738,11 @@ h3 {
     width: 58px;
   }
 
+  .brand span {
+    font-size: 28px;
+    line-height: 1;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -801,8 +807,13 @@ h3 {
     padding: 14px 16px;
   }
 
+  .brand {
+    gap: 10px;
+  }
+
   .brand span {
-    display: none;
+    display: inline;
+    font-size: 32px;
   }
 
   .hero-copy,
