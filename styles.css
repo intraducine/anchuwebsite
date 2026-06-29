@@ -22,20 +22,26 @@
 
 html {
   background: var(--deep-leaf);
+  min-height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: var(--paper);
+  background: var(--deep-leaf);
   color: var(--ink);
   font-family: var(--body);
   line-height: 1.5;
+  min-height: 100%;
   overflow-x: hidden;
 }
 
 body.is-locked {
   overflow: hidden;
+}
+
+main {
+  background: var(--paper);
 }
 
 a {
@@ -467,7 +473,7 @@ h3 {
 .footer {
   background: var(--deep-leaf);
   color: var(--white);
-  padding: 42px clamp(18px, 7vw, 92px);
+  padding: 42px clamp(18px, 7vw, 92px) calc(42px + env(safe-area-inset-bottom));
 }
 
 .footer-main,
