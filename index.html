@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchu | Homemade South Indian Food</title>
+    <meta
+      name="description"
+      content="Small-batch South Indian food in Cincinnati, made with excellent flavor, quality ingredients, and community in mind."
+    />
+    <meta name="theme-color" content="#69b6d7" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+      <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></symbol>
+      <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+      <symbol id="icon-message-circle" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5A8.5 8.5 0 0 1 21 11v.5Z"/></symbol>
+      <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M5 12h14"/></symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="icon-shopping-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+      <symbol id="icon-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.1 2.1h3l2.7 12.4a2 2 0 0 0 2 1.6h7.3a2 2 0 0 0 2-1.6l1.6-8.4H6.1"/></symbol>
+      <symbol id="icon-square" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/></symbol>
+      <symbol id="icon-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 2 1 3 3 3s3-1 3-3V2"/><path d="M6 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.2.8 2 2 2Z"/><path d="M18 15v7"/></symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    </svg>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Anchu home">
+        <img src="assets/anchu-logo.jpeg" alt="anchu logo" />
+        <span>Anchu</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Stay in touch</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-cart-open aria-label="Open cart" title="Cart">
+          <svg class="icon" aria-hidden="true"><use href="#icon-shopping-cart"></use></svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" data-menu-open aria-label="Open menu" title="Menu">
+          <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+      <div class="mobile-menu__bar">
+        <img src="assets/anchu-logo.jpeg" alt="" />
+        <button class="icon-btn" type="button" data-menu-close aria-label="Close menu" title="Close">
+          <svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+        </button>
+      </div>
+      <a href="#menu">Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Stay in touch</a>
+    </div>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img src="assets/hero-south-indian.png" alt="South Indian breakfast with idli, vada, sambar, and chutneys" />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Small-batch Indian food in Cincinnati</p>
+          <h1 id="hero-title">Homemade South Indian food, festive by the jar.</h1>
+          <p>
+            Bright pickles, slow-built masalas, and pickup-friendly batches made with excellent flavor, quality
+            ingredients, and community in mind.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">
+              <svg class="icon" aria-hidden="true"><use href="#icon-utensils"></use></svg>
+              Menu
+            </a>
+            <button class="button button-secondary" type="button" data-contact-open>
+              <svg class="icon" aria-hidden="true"><use href="#icon-message-circle"></use></svg>
+              Text us
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="availability" aria-label="Pickup details">
+        <div>
+          <span class="availability__label">Pickup</span>
+          <strong>1801 Elm St, Cincinnati, OH</strong>
+        </div>
+        <div>
+          <span class="availability__label">Current batch</span>
+          <strong>Chicken pickle is resting</strong>
+        </div>
+        <div>
+          <span class="availability__label">Updates</span>
+          <strong>Instagram first</strong>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <p class="eyebrow">Featured items</p>
+          <h2 id="menu-title">A banana-leaf counter for the next batch.</h2>
+        </div>
+
+        <div class="leaf-strip" role="list">
+          <article class="product" role="listitem">
+            <button class="product__image" type="button" data-product="large" aria-label="View Large Chicken Pickle">
+              <img src="assets/chicken-pickle-large.png" alt="Placeholder image for Large Chicken Pickle" />
+            </button>
+            <div class="product__body">
+              <div>
+                <p class="product__kicker">400g glass jar</p>
+                <h3>Large Chicken Pickle</h3>
+              </div>
+              <p class="price">$25.00</p>
+              <p class="status">Out of stock</p>
+              <button class="button product-button" type="button" data-product="large">
+                <svg class="icon" aria-hidden="true"><use href="#icon-eye"></use></svg>
+                View item
+              </button>
+            </div>
+          </article>
+
+          <article class="product" role="listitem">
+            <button class="product__image" type="button" data-product="small" aria-label="View Small Chicken Pickle">
+              <img src="assets/chicken-pickle-small.png" alt="Placeholder image for Small Chicken Pickle" />
+            </button>
+            <div class="product__body">
+              <div>
+                <p class="product__kicker">Small jar</p>
+                <h3>Small Chicken Pickle</h3>
+              </div>
+              <p class="price">$14.00</p>
+              <p class="status">Out of stock</p>
+              <button class="button product-button" type="button" data-product="small">
+                <svg class="icon" aria-hidden="true"><use href="#icon-eye"></use></svg>
+                View item
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-mark">Anchu</div>
+        <div class="about-copy">
+          <p class="eyebrow">About Us</p>
+          <h2 id="about-title">Flavor, ingredients, community.</h2>
+          <p>
+            We started Anchu with three intentions: to provide excellent flavor, use quality ingredients, and build
+            community. We are excited to have you here.
+          </p>
+          <a class="text-link" href="https://www.instagram.com/Anchu.co" target="_blank" rel="noreferrer">
+            Follow Instagram for updates
+            <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-main">
+        <a class="brand brand-footer" href="#top" aria-label="Anchu home">
+          <img src="assets/anchu-logo.jpeg" alt="anchu logo" />
+          <span>Anchu</span>
+        </a>
+        <div class="footer-links">
+          <a href="mailto:anchu.foods@gmail.com">
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+            Email
+          </a>
+          <a href="https://www.instagram.com/Anchu.co" target="_blank" rel="noreferrer">
+            <svg class="icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>stay in touch ^</span>
+        <span>© 2026</span>
+      </div>
+    </footer>
+
+    <button class="floating-contact" type="button" data-contact-open>
+      <svg class="icon" aria-hidden="true"><use href="#icon-message-circle"></use></svg>
+      Text us
+    </button>
+
+    <aside class="drawer" data-cart-drawer aria-hidden="true" aria-label="Shopping cart">
+      <div class="drawer__panel">
+        <button class="icon-btn drawer-close" type="button" data-cart-close aria-label="Close cart" title="Close">
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"></use></svg>
+        </button>
+        <img class="drawer-logo" src="assets/anchu-logo.jpeg" alt="" />
+        <h2>Your cart is empty</h2>
+        <p>Items are currently out of stock. Check Instagram or send a note for the next batch.</p>
+        <button class="button button-primary" type="button" data-cart-close>
+          <svg class="icon" aria-hidden="true"><use href="#icon-shopping-bag"></use></svg>
+          Continue Shopping
+        </button>
+        <div class="secure-checkout">
+          <svg class="icon" aria-hidden="true"><use href="#icon-square"></use></svg>
+          <span>Secure checkout by Square</span>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="drawer contact-drawer" data-contact-drawer aria-hidden="true" aria-label="Contact Anchu">
+      <div class="drawer__panel">
+        <button class="icon-btn drawer-close" type="button" data-contact-close aria-label="Close contact panel" title="Close">
+          <svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+        </button>
+        <h2>Stay in touch</h2>
+        <p>Send a quick note about pickup, batch timing, or catering.</p>
+        <form class="contact-form" data-contact-form>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required>Hi Anchu, I would like updates on the next chicken pickle batch.</textarea>
+          </label>
+          <button class="button button-primary" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#icon-send"></use></svg>
+            Send note
+          </button>
+        </form>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </div>
+    </aside>
+
+    <div class="modal" data-product-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__scrim" data-modal-close></div>
+      <div class="modal__card">
+        <button class="icon-btn modal-close" type="button" data-modal-close aria-label="Close item details" title="Close">
+          <svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+        </button>
+        <img data-modal-image src="assets/chicken-pickle-large.png" alt="" />
+        <div class="modal__content">
+          <a class="breadcrumb" href="#menu">Home &gt;</a>
+          <h2 id="modal-title" data-modal-title>Large Chicken Pickle</h2>
+          <p class="price" data-modal-price>$25.00</p>
+          <p class="status">Out of stock</p>
+          <div class="quantity" aria-label="Quantity">
+            <button type="button" aria-label="Decrement" disabled>
+              <svg class="icon" aria-hidden="true"><use href="#icon-minus"></use></svg>
+            </button>
+            <span>0</span>
+            <button type="button" aria-label="Increment" disabled>
+              <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+            </button>
+          </div>
+          <button class="button button-disabled" type="button" disabled>Out of stock</button>
+          <h3>Description</h3>
+          <p data-modal-description>400g of our signature Chicken Pickle in a glass jar.</p>
+          <div class="pickup-box">
+            <strong>How to get it</strong>
+            <span>Store pickup · Anchu · 1801 Elm St Cincinnati, OH</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
